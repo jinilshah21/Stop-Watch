@@ -41,6 +41,11 @@ body{
     font-family: sans-serif;
     color:#90c4c8;
 }
+span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: serif;
+}
 .hour{
     font-size: 8rem;
     font-family: sans-serif;
