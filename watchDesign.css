@@ -45,6 +45,9 @@ span{
     font-size: 1.5rem;
     font-weight: 700;
     font-family: serif;
+    position:relative;
+    padding-top:220px;
+    color:#90c4c8;
 }
 .hour{
     font-size: 8rem;
