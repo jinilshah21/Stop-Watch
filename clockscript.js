@@ -41,7 +41,6 @@ function lap() {
         else if (secc < 10) {
             lapnow = hr + " : " + min + " :0" + secc;
         }
-
         lapnum++;
         document.getElementById("lapcount").innerHTML = document.getElementById("lapcount").innerHTML + "<p>" + lapnow + "</p>" + "<hr>";
     }
