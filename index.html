@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="watchDesign.css">
+</head>
+
+<body>
+    <h1 class="name">SpeedO Pal</h1>
+    <div class="watch">
+
+        <div class="watchnumbers">
+            <p class="hour" id="hour">00</p>
+            <p class="colen">:</p>
+            <p class="min" id="min">00</p>
+            <p class="colen">:</p>
+            <p class="sec" id="sec">00</p>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="pause" onclick="pause()">Pause</button>
+        <button class="start" onclick="start()">Start</button>
+        <button class="lap" onclick="lap()">Lap</button>
+    </div>
+    <button class="reset" onclick="reset()">Reset</button>
+    <div class="laps">
+        <ol class="orderedlist">
+            <p onclick="lap()" id="lapcount" class="lapcount"></p>
+        </ol>
+    </div>
+
+
+    <script src="clockscript.js" async defer></script>
+</body>
+
+</html>
