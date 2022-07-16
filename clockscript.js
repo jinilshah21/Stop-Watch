@@ -20,7 +20,28 @@ function start() {
 }
 function lap() {
     if (timer == true) {
-        lapnow = hr + " : " + min + " : " + secc;
+        if (hr < 10 && min < 10 && secc < 10) {
+            lapnow = "0" + hr + " : 0" + min + " : 0" + secc;
+        }
+        else if (hr < 10 && min < 10) {
+            lapnow = "0" + hr + " : 0" + min + " : " + secc;
+        }
+        else if (hr < 10 && secc < 10) {
+            lapnow = "0" + hr + " : " + min + " : 0" + secc;
+        }
+        else if (min < 10 && secc < 10) {
+            lapnow = hr + " : 0" + min + " : 0" + secc;
+        }
+        else if (hr < 10) {
+            lapnow = "0" + hr + " : " + min + " : " + secc;
+        }
+        else if (min < 10) {
+            lapnow = hr + " :0" + min + " : " + secc;
+        }
+        else if (secc < 10) {
+            lapnow = hr + " : " + min + " :0" + secc;
+        }
+
         lapnum++;
         document.getElementById("lapcount").innerHTML = document.getElementById("lapcount").innerHTML + "<p>" + lapnow + "</p>" + "<hr>";
     }
