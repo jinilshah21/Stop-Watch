@@ -20,6 +20,7 @@ function start() {
 }
 function lap() {
     if (timer == true) {
+
         if (hr < 10 && min < 10 && secc < 10) {
             lapnow = "0" + hr + " : 0" + min + " : 0" + secc;
         }
